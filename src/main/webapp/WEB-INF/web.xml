@@ -10,6 +10,10 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:spring.xml</param-value>
   </context-param>
+    <!-- 启动IOC容器的ServletContext -->
+
+    <!-- 配置上下文载入器 -->
+    <!-- 上下文载入器 载入除DispatcherServlet载入的配置文件之外的其他上下文配置文件 -->
   <listener>
     <listener-class>com.spring.web.context.SpringServletContextListener</listener-class>
   </listener>
@@ -21,6 +25,8 @@
       <servlet-name>testServlet</servlet-name>
       <url-pattern>/testServlet</url-pattern>
     </servlet-mapping>
+
+
 
 
 </web-app>

@@ -19,6 +19,9 @@ public class SpringServletContextListener implements ServletContextListener {
         ApplicationContext ctx=new ClassPathXmlApplicationContext(contextConfigLocation);
         //2、把ioc容器，放在ServletContext的一个属性中
         servletContext.setAttribute("ApplicationContext",ctx);
+
+
+
     }
 
     @Override
